@@ -62,42 +62,42 @@ const nido2 = document.getElementById("button-div");
 const botón = document.createElement("button");
 const tipoBotón = document.createAttribute("type")
 tipoBotón.value = "button";
-botón.setAttributeNode(tipoBotón)
-nido2.appendChild(botón)
+botón.setAttributeNode(tipoBotón);
+nido2.appendChild(botón);
 
 //Estilizamos el botón y su div y le añadimos texto
 botón.style.width = "300px";
 botón.style.height = "100px";
-botón.style.textAlign = "justify"
-botón.style.backgroundColor = "green"
-botón.style.color = "white"
-botón.style.textAlign = "center"
+botón.style.textAlign = "justify";
+botón.style.backgroundColor = "green";
+botón.style.color = "white";
+botón.style.textAlign = "center";
 botón.style.fontSize = "22px";
-botón.style.borderRadius = "150px"
+botón.style.borderRadius = "150px";
 nido2.style.fontSize = "22px";
 nido2.style.margin = "30px";
 nido2.style.textAlign= "center";
 
-const textoEnBotón = document.createTextNode("Si me pulsas, prometo revelarte los secretos")
-botón.appendChild(textoEnBotón)
-const texto2Botón = document.createTextNode("Venga, pulsa otra vez para enseñarme la puerta")
+const textoEnBotón = document.createTextNode("Si me pulsas, prometo revelarte los secretos");
+botón.appendChild(textoEnBotón);
+const texto2Botón = document.createTextNode("Venga, pulsa otra vez para enseñarme la puerta");
 
 //Creamos la variable párrafo y la ocultamos
 
 const párrafo = document.getElementById("párrafo-botón");
-párrafo.style.visibility = "hidden"
+párrafo.style.visibility = "hidden";
 
 //creamos el event onclick:
 botón.onclick = function() {
     if (párrafo.style.visibility !== "visible") {
-        párrafo.style.visibility = "visible"
-        botón.replaceChild(texto2Botón, textoEnBotón)
-        botón.style.backgroundColor = "#8B0000"
+        párrafo.style.visibility = "visible";
+        botón.replaceChild(texto2Botón, textoEnBotón);
+        botón.style.backgroundColor = "#8B0000";
 
     } else {
         párrafo.style.visibility = "hidden";
-        botón.replaceChild(textoEnBotón, texto2Botón)
-        botón.style.backgroundColor = "green"
+        botón.replaceChild(textoEnBotón, texto2Botón);
+        botón.style.backgroundColor = "green";
     }
 }
 
@@ -110,10 +110,10 @@ const párrafoVisible = document.querySelector("#párrafo2");
 párrafoOculto.style.visibility = "hidden"
 
 document.querySelector("#párrafo2").onmouseover = function() {
-    párrafoOculto.style.visibility = "visible"
+    párrafoOculto.style.visibility = "visible";
 }
 document.querySelector("#párrafo2").onmouseout = function() {
-    párrafoOculto.style.visibility = "hidden"
+    párrafoOculto.style.visibility = "hidden";
 }
     
 
@@ -124,21 +124,20 @@ nido3.style.display = "flex";
 nido3.style.flexDirection = "row";
 nido3.style.flexWrap = "wrap";
 nido3.style.justifyContent = "space-around";
-nido3.style.alignItems = "flex-end"
-nido3.style.alingnContent = "flex-end"
+nido3.style.alignItems = "flex-end";
+nido3.style.alingnContent = "flex-end";
 nido3.style.width = "100%";
-nido3.style.backgroundColor = "black"
-nido3.style.padding = "20px"
+nido3.style.backgroundColor = "black";
+nido3.style.padding = "20px";
 
+párrafoOculto.style.color = "red";
+párrafoOculto.style.fontsize = "20px";
+párrafoOculto.style.margin = "20px";
+párrafoOculto.style.flex = "1 0 auto";
+párrafoOculto.style.fontFamily = "Verdana";
 
-párrafoOculto.style.color = "red"
-párrafoOculto.style.fontsize = "20px"
-párrafoOculto.style.margin = "20px"
-párrafoOculto.style.flex = "1 0 auto"
-párrafoOculto.style.fontFamily = "Verdana"
-
-párrafoVisible.style.color = "white"
-párrafoVisible.style.fontSize = "20px"
-párrafoVisible.style.margin = "22px"
-párrafoVisible.style.flex = "1 0 auto"
-párrafoVisible.style.fontFamily = "Courier New, Verdana"
+párrafoVisible.style.color = "white";
+párrafoVisible.style.fontSize = "20px";
+párrafoVisible.style.margin = "22px";
+párrafoVisible.style.flex = "1 0 auto";
+párrafoVisible.style.fontFamily = "Courier New, Verdana";
