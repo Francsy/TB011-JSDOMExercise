@@ -1,4 +1,24 @@
-#meme {
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
+body {
+    height: 100vh;
+}
+
+main {
+    height: 70%;
+}
+
+footer {
+    min-height: 30%;
+}
+
+#div-apariciones {
+    height: 100%;
+}
+
+#meme {
     max-width: 300px;
 }
