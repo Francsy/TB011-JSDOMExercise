@@ -1,17 +1,18 @@
 # TB011-JSDOMExercise
 The exercise consists of the following:
 
-Add two &lt;li&gt; elements to a &lt;ul&gt;, and append them to the DOM of your HTML page*
-Use:
+1. Add two &lt;li&gt; elements to a &lt;ul&gt;, and append them to the DOM of your HTML page*
+	Use:
 
-innerHTML
-appendChild()
-createElement()
-createAttribute()
-createTextNode()
-Create a button that toggles the visibility of a paragraph each time the button is clicked. By default, the paragraph should be visible. Apply styles to the affected elements.
+	- innerHTML
+	- appendChild()
+	- createElement()
+	- createAttribute()
+	- createTextNode()
+	
+2. Create a button that toggles the visibility of a paragraph each time the button is clicked. By default, the paragraph should be visible. Apply styles to the affected elements.
 
-Use onmouseover to display a hidden paragraph when hovering over another paragraph. Apply styles to the affected elements.
+3. Use onmouseover to display a hidden paragraph when hovering over another paragraph. Apply styles to the affected elements.
 
 
 
